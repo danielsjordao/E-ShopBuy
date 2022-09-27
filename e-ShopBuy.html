@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> E-Shop Buy </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="e-shopbuy_logo.png">
+    <link href="https://fonts.google.com/specimen/Kumbh+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="e-ShopBuy.css">
+    <link rel="stylesheet" href="e-ShopBuy_reset.css">
+  
+  </head>
+
+  <body>
+      <header>
+        <div class="logo">
+          <h1><img src="e-shopbuy_header.png" width="666px" height="375px"></h1>
+            
+            <nav>
+              <ul>
+                  <li><a href="e-shopbuy.html">Home</a></li>
+                  <li><a href="aboutus.html">About us</a></li>
+                  <li><a href="collections.html">Collections</a></li>
+                  <li><a href="mem.html">Men</a></li>
+                  <li><a href="women.html">Women</a></li>
+                  <li><a href="kids.html">Kids</a></li>                  
+                  <li><a href="contat.html">Contact</a></li>                
+              </ul>          
+            </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="edition">
+            <h2 class="limitededition">Spring Limited Edition Sneakers</h2>
+              <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+              <p class="discountprice">$125.00</p>
+              <p class="discount">Discount 50%</p>
+              <p class="fullprice">Full price $250.00</p>
+              
+              <body>
+                <input type="submit" value="Add to cart" class="submit"></input>
+              </body>
+              
+        </section>
+
+        <fieldset class=box>
+              <div =container>
+                    <button onclick="increment()">+</button>
+                    <h2 id="counting"></h2>
+                    <button onclick="decrement()">-</button>
+              </div>
+
+              <!-- JavaScript code-->
+              <script>
+                    var data = 1;
+        
+                  document.getElementById("counting").innerText = data;
+        
+                  function increment() {
+                      data = data + 1;
+                      document.getElementById("counting").innerText = data;
+                  }
+                  
+                  function decrement() {
+                      data = data - 1;
+                      document.getElementById("counting").innerText = data;
+                  }
+                  function decrement() {
+                      data = data = 1;
+                      document.getElementById("counting").innerText = data;
+                  }
+              </script>      
+        </fieldset>
+      </main>
+
+      <footer>
+        <img src="e-shopbuy_footer.png">
+        <p class="copyright">&copy; E-Shop Buy Co. All rights reserved - 2022</p>
+      </footer>
+  
+      <div class="attribution">
+        E-Shop Buy Co. <a href="https://www.eshopbuy.com?ref=challenge" target="_blank">Mentoria CSV</a>. 
+        Coded by <a href="#">Daniel Jordao</a>.
+      </div>
+  </body>
+</html>
