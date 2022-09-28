@@ -9,22 +9,30 @@ input{
   width: 50px; 
 }*/
 
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+header {
+  background: #E6E6FA;
+  padding: 20px 0;
+}
+
 /*apply css properties to logo tag*/
 
 .logo{
   position: relative;
   text-align: left;
-  right: 200px;
-  top: 10px;
+  right: 70px;
+  top: 30px;
 }
 
 /* apply css properties to head tag*/
 
 nav {
   position: absolute;
-  top: 100px;
-  right: -200px;
-
+  top: 50px;
+  right: 100px;
 }
 
 nav li {
@@ -36,7 +44,7 @@ nav a {
   text-transform: uppercase;
   color: #BDB76B;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
 }
 
@@ -53,6 +61,95 @@ body {
     text-align: left;
 }
 
+.background{
+    background-image: url(http://down.699pic.com/photo/40194/1716.jpg?_upt=64e424871664357952&_upd=Lovepik_com-401941716-e-commerce-background.jpg);
+    position: relative;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+}    
+
+.limitededition{
+  position: absolute;
+  font-size: 40px;
+  left: 600px;
+  top: 200px;
+  color:#FFFFFF;
+  font-weight: bold;
+}
+
+.sneakers-explain{
+  position: absolute;
+  top: 250px;
+  left: 550px;
+  font-size: 18px;
+  color:white;
+  font-style: italic;
+}
+
+.sneakers{
+  width: 35%;
+  position: absolute;
+  top: 300px;
+  left: 10px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+}
+
+.discountprice{
+  position: absolute;
+  top: 400px;
+  left: 550px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.discount{
+  position: absolute;
+  top: 400px;
+  left: 630px;
+  font-size: 20px;
+  box-sizing: border-box;
+  border: 2px solid orange;
+  border-radius:5px;
+  padding: 8px 8px;
+  background: orange;
+  color: white;
+  font-weight: bold;
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 5px 5px 5px 0 #FFDEAD; 
+}
+
+.fullprice{
+  position: absolute;
+  top: 430px;
+  left: 550px;
+  font-size: 18px;
+  text-decoration: line-through;
+  color: lightgray;
+}
+
+.submit{
+  position: absolute;
+  top: 580px;
+  left: 800px;
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(orange, orangered);
+  box-sizing: border-box;
+  border: none;
+  border-radius:5px;
+  padding: 20px 40px;
+  cursor: pointer;
+  transition: 1s all;
+  color: white;
+}
+
+.submit:hover {
+    background: orange;
+    transform: scale(1.1);
+}
 /*apply css properties to edition class*/
 
 .edition{
@@ -61,28 +158,41 @@ body {
 
 /*apply css properties to container class*/
   
-.container {
+/*.container {
     justify-content: center;
     align-items: center;
-    display: flex;
+    display: inline;
     height: 100%;
     text-align: center;
-}
+}*/
   
 /*apply css properties to button tag*/
   
+.box{
+  position: absolute;
+  top: 550px;
+  left: 600px;
+  font-size: 20px;
+  display: inline-flex;
+  margin: 20px;
+  font-size: 18px;
+  width: 45px;
+  padding: 40px;
+
+/*apply hover effect to button,box,h2 tag*/
+
 button {
     width: 30px;
     height: 30px;
     font-size: 15px;
-    background-color: gray;
+    background-color: lightgray;
     color: honeydew;
 }
   
 /*apply hover effect to button tag*/
   
 button:hover {
-    background-color: gray;
+    background-color: lightgray;
     color: honeydew;
 }
   
@@ -92,13 +202,11 @@ h2 {
     color: black;
     margin: 0 50px;
     font-size: 20px;
+    font-weight: bold;
 }
 
 /*apply css properties to fieldset tag*/
-.box{
-  margin: 20px;
-  font-size: 18px;
-  width: 45px;
+
 }
 footer{
    text-align: center;
