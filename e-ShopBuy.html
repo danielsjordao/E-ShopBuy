@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> E-Shop Buy </title>
-    <link rel="icon" type="image/png" sizes="32x32" href="e-shopbuy_logo.png">
-    <link href="https://fonts.google.com/specimen/Kumbh+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="e-ShopBuy.css">
-    <link rel="stylesheet" href="e-ShopBuy_reset.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title> E-Shop Buy </title>
+
+      <link rel="icon" type="image/png" sizes="32x32" href="e-shopbuy_logo.png">
+
+      <link href="https://fonts.google.com/specimen/Kumbh+Sans" rel="stylesheet">
+
+      <link rel="stylesheet" href="e-ShopBuy.css">
+      <link rel="stylesheet" href="e-ShopBuy_reset.css">
   
   </head>
 
   <body>
       <header>
         <div class="logo">
-          <h1><img src="e-shopbuy_header.png" width="666px" height="375px"></h1>
+          <h1><img src="e-shopbuy_header.png" width="333px" height="187px"></h1>
             
             <nav>
               <ul>
@@ -32,23 +36,31 @@
 
       <main>
         <section class="edition">
-            <h2 class="limitededition">Spring Limited Edition Sneakers</h2>
-              <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+            <div>
+              <img class="background" src="e-commerce-background.jpg" alt="background">
+              <label id="text" class="limitededition"><strong>Spring Limited Edition Sneakers</strong></label>
+            </div>
+                                  
+              <p class="sneakers-explain">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+              <img src="image-product-1.jpg" class="sneakers">
               <p class="discountprice">$125.00</p>
-              <p class="discount">Discount 50%</p>
-              <p class="fullprice">Full price $250.00</p>
+              <p class="discount">50%</p>
+              <p class="fullprice">$250.00</p>
               
               <body>
-                <input type="submit" value="Add to cart" class="submit"></input>
+                <section>
+                <input type="submit" value="Add to cart" class="submit"></input>                
               </body>
               
         </section>
 
         <fieldset class=box>
               <div =container>
+                    
                     <button onclick="increment()">+</button>
                     <h2 id="counting"></h2>
-                    <button onclick="decrement()">-</button>
+                    <button onclick="decrement()">-</button>               
+                    
               </div>
 
               <!-- JavaScript code-->
@@ -70,7 +82,7 @@
                       data = data = 1;
                       document.getElementById("counting").innerText = data;
                   }
-              </script>      
+              </script>        
         </fieldset>
       </main>
 
@@ -81,7 +93,7 @@
   
       <div class="attribution">
         E-Shop Buy Co. <a href="https://www.eshopbuy.com?ref=challenge" target="_blank">Mentoria CSV</a>. 
-        Coded by <a href="#">Daniel Jordao</a>.
+        Coded by <a href="#">Daniel Jordão</a>.
       </div>
   </body>
 </html>
