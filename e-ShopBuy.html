@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width"> 
 
       <title> E-Shop Buy </title>
 
@@ -11,7 +11,7 @@
       <link href="https://fonts.google.com/specimen/Kumbh+Sans" rel="stylesheet">
 
       <link rel="stylesheet" href="e-ShopBuy.css">
-      <link rel="stylesheet" href="e-ShopBuy_reset.css">
+      <link rel="stylesheet" href="reset.css">
   
   </head>
 
@@ -28,7 +28,17 @@
                   <li><a href="mem.html">Men</a></li>
                   <li><a href="women.html">Women</a></li>
                   <li><a href="kids.html">Kids</a></li>                  
-                  <li><a href="contat.html">Contact</a></li>                
+                  <li><a href="contat.html">Contact</a></li>
+
+                  
+                <!--<div class="buy">
+                        <a href="cart.html">
+                              <ol>
+                                    <li>My Cart</li>
+                                    <li><img class="cart" src="icon-cart.svg"></li>
+                              </ol>
+                        </a>
+                  </div>-->                         
               </ul>          
             </nav>
         </div>
@@ -42,58 +52,40 @@
             </div>
                                   
               <p class="sneakers-explain">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-              <img src="image-product-1.jpg" class="sneakers">
+
+              <img src="image-product-1.jpg" class="image1">
+              <img src="image-product-3.jpg" class="image2">
+              <img src="image-product-2-thumbnail.jpg" class="image3">
+              <img src="image-product-4-thumbnail.jpg" class="image4">
+
               <p class="discountprice">$125.00</p>
               <p class="discount">50%</p>
               <p class="fullprice">$250.00</p>
               
-              <body>
-                <section>
-                <input type="submit" value="Add to cart" class="submit"></input>                
+              <body>                
+                <input type="submit" value="🛒Add to cart" class="submit"></input>                
               </body>
               
         </section>
-
-        <fieldset class=box>
-              <div =container>
-                    
-                    <button onclick="increment()">+</button>
-                    <h2 id="counting"></h2>
-                    <button onclick="decrement()">-</button>               
-                    
+    
+              <div class=box>
+                  <button onclick="decrement()">-</button>
+                  <input id=demoInput type=number min=1 max=10>
+                  <button onclick="increment()">+</button>      
               </div>
 
               <!-- JavaScript code-->
               <script>
-                    var data = 1;
-        
-                  document.getElementById("counting").innerText = data;
-        
                   function increment() {
-                      data = data + 1;
-                      document.getElementById("counting").innerText = data;
-                  }
-                  
+                  document.getElementById('demoInput').stepUp();}
                   function decrement() {
-                      data = data - 1;
-                      document.getElementById("counting").innerText = data;
-                  }
-                  function decrement() {
-                      data = data = 1;
-                      document.getElementById("counting").innerText = data;
-                  }
-              </script>        
-        </fieldset>
+                  document.getElementById('demoInput').stepDown(); }
+              </script>  
       </main>
 
       <footer>
-        <img src="e-shopbuy_footer.png">
+        <img src="e-shopbuy_footer.png" class="footer-image" width="222" height="120px">
         <p class="copyright">&copy; E-Shop Buy Co. All rights reserved - 2022</p>
       </footer>
-  
-      <div class="attribution">
-        E-Shop Buy Co. <a href="https://www.eshopbuy.com?ref=challenge" target="_blank">Mentoria CSV</a>. 
-        Coded by <a href="#">Daniel Jordão</a>.
-      </div>
   </body>
 </html>
