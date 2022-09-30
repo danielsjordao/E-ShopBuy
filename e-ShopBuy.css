@@ -4,7 +4,6 @@ body {
 }
 
 header {
-  background: linear-gradient(#E0FFFF, #B0E0E6);
   padding: 20px 0;
 }
 
@@ -14,7 +13,7 @@ header {
   position: relative;
   text-align: left;
   right: 90px;
-  top: 30px;
+  top: 10px;
   margin-bottom: auto;
 }
 
@@ -52,14 +51,24 @@ body {
     text-align: left;
 }
 
+/*apply css properties to background tag*/
+
 .background{
     background-image: url(http://down.699pic.com/photo/40194/1716.jpg?_upt=64e424871664357952&_upd=Lovepik_com-401941716-e-commerce-background.jpg);
     position: relative;
     background-size: 0 0 0 auto;
-    width: 100%;
     height: 100%;
+    margin:-90px 50px;
+    border: 2px solid #C0C0C0;
+    border-radius: 10px;
+    width: 90%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #C0C0C0;
 
 }    
+
+/*apply css properties to title and sneakers explain tag*/
 
 .limitededition{
   position: absolute;
@@ -68,30 +77,32 @@ body {
   top: 200px;
   color:#FFFFFF;
   font-weight: bold;
+
 }
 
 .sneakers-explain{
   position: absolute;
-  top: 290px;
+  top: 250px;
   left: 600px;
-  right: 200px;
+  right: 180px;
   font-size: 18px;
-  color:white;
+  color:black;
   font-style: italic;
   line-height: 1.5;
 }
 
+/*apply css properties to sneakers images tag*/
+
 .image1{
-  width: 35%;
+  width: 30%;
   position: absolute;
-  top: 300px;
-  left: 10px;
-  border: 1px solid #FFFFFF;
+  top: 190px;
+  left: 100px;
+  border: 1px solid none;
   border-radius: 10px;
-  width: 35%;
   opacity: 1;
   transition: 400ms;
-  box-shadow: 10px 10px 10px 0 #000000;
+  box-shadow: 10px 10px 10px 0 #B0C4DE;
   cursor: pointer;
 }
 
@@ -100,13 +111,13 @@ body {
 }
 
 .image2{
-  width: 10%;
+  width: 8%;
   position: absolute;
-  top: 800px;
-  left: 10px;
+  top: 630px;
+  left: 100px;
   border: 1px solid #FFFFFF;
   border-radius: 10px;
-  width: 10%;
+  
   opacity: 1;
   transition: 400ms;
   box-shadow: 10px 10px 10px 0 #000000;
@@ -118,13 +129,12 @@ body {
 }
 
 .image3{
-  width: 10%;
+  width: 8%;
   position: absolute;
-  top: 800px;
-  left: 180px;
+  top: 630px;
+  left: 245px;
   border: 1px solid #FFFFFF;
   border-radius: 10px;
-  width: 10%;
   opacity: 1;
   transition: 400ms;
   box-shadow: 10px 10px 10px 0 #000000;
@@ -136,13 +146,12 @@ body {
 }
 
 .image4{
-  width: 10%;
+  width: 8%;
   position: absolute;
-  top: 800px;
-  left: 345px;
+  top: 630px;
+  left: 390px;
   border: 1px solid #FFFFFF;
   border-radius: 10px;
-  width: 10%;
   opacity: 1;
   transition: 400ms;
   box-shadow: 10px 10px 10px 0 #000000;
@@ -153,9 +162,11 @@ body {
   opacity: 0.7;
 }
 
+/*apply css properties to values tag*/
+
 .discountprice{
   position: absolute;
-  top: 500px;
+  top: 400px;
   left: 600px;
   right: 900px;
   font-size: 30px;
@@ -164,7 +175,7 @@ body {
 
 .discount{
   position: absolute;
-  top: 500px;
+  top: 410px;
   left: 720px;
   font-size: 20px;
   box-sizing: border-box;
@@ -181,16 +192,18 @@ body {
 
 .fullprice{
   position: absolute;
-  top: 530px;
+  top: 450px;
   left: 600px;
   font-size: 18px;
   text-decoration: line-through;
   color: lightgray;
 }
 
+/*apply css properties to Add to cart tag*/
+
 .submit{
   position: absolute;
-  top: 580px;
+  top: 500px;
   left: 800px;
   font-size: 20px;
   font-weight: bold;
@@ -209,11 +222,11 @@ body {
     transform: scale(1.1);
 }
 
-/*apply css properties to button tag*/
+/*apply css properties to increment/decrement tag*/
   
 .box{
   position:absolute;
-  top: 550px;
+  top: 470px;
   left: 550px;
   font-size: 25px;
   display: inline-flex;
@@ -249,56 +262,53 @@ input{
     color: darkorange;
     font-weight: bolder;
 }
-/*apply css properties to h2 tag*/
-  
-/*h2 {
-    color: black;
-    margin: 0 50px;
-    font-size: 20px;
-    font-weight: bold;
-}*/
 
-/*apply css properties to fieldset tag*/
-
+/*apply css properties to footer/copyright tag*/
 footer{
   text-align: center;
-  background: linear-gradient(#D8BFD8, #B0E0E6);
-  padding: 40px 0;
+  margin: 50px 0;
 }
 
 .copyright{
   color: #000000;
   font-size: 16px;
-  margin: 10px 50px;
+  font-weight: bold;
+  text-decoration: none;
 }
-
-@media screen and (max-width:  600px){
-.logo, .edition, .limitededition, .submit, .discountprice, .discount, .fullprice, .box, .sneakers, .little-sneakers, .footer-image, .cpoyright{
-  width: auto;
-  }
 
   /*apply css properties to cart tag*/
 
-/*.buy {
-      font-size: 12px;
-      padding-right: 35px;
-      text-align: right;
-      width: 150px;
-      height: 25px;
-      position: relative;
-      float: right;
-      bottom: 14px;
-      clear: right;
+.buy {
+    padding-right: 120px;
+    text-align: right;
+    width: 90px;
+    height: 50px;
+    position: relative;
+    float: right;
+    bottom: 14px;
+    clear: right;
+    top: -150px;
+    text-transform: uppercase;
+    color: #BDB76B;
+    font-weight: bold;
+    font-size: 10px;
+    
 }
-.buy ol li {
+.buy ol {
       display: inline;
       text-align: center;
       list-style-type: none;
+      color: #BDB76B;
+      
 }
 .cart {
       position: absolute;
-      bottom: 5px;
+      bottom: 10px;
+      width: 30px;
 }
 .buy a {
       text-decoraton: none;
-}*/
+      text-align: center;
+      list-style-type: none;
+      color: #BDB76B;     
+}
