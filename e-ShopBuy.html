@@ -29,20 +29,21 @@
                   <li><a href="women.html">Women</a></li>
                   <li><a href="kids.html">Kids</a></li>                  
                   <li><a href="contat.html">Contact</a></li>
-
-                  
-                <!--<div class="buy">
-                        <a href="cart.html">
-                              <ol>
-                                    <li>My Cart</li>
-                                    <li><img class="cart" src="icon-cart.svg"></li>
-                              </ol>
-                        </a>
-                  </div>-->                         
-              </ul>          
+              </ul>
             </nav>
         </div>
       </header>
+                  
+        <div class="buy">
+                  <a href="cart.html">
+                    <ol>
+                      <li></li>
+                      <li><img class="cart" src="icon-cart.svg"></li>
+                    </ol>
+                  </a>
+        </div>                   
+                  
+  
 
       <main>
         <section class="edition">
@@ -63,8 +64,13 @@
               <p class="fullprice">$250.00</p>
               
               <body>                
-                <input type="submit" value="🛒Add to cart" class="submit"></input>                
+                <input type="submit" value="🛒Add to cart" onclick= "function1()" class="submit"></input>                                  
               </body>
+
+        <script type="text/javascript">
+                function function1() {
+                alert ("Thanks for your Shopping!");}                
+        </script>
               
         </section>
     
@@ -84,8 +90,9 @@
       </main>
 
       <footer>
-        <img src="e-shopbuy_footer.png" class="footer-image" width="222" height="120px">
+        <img src="e-shopbuy_footer.png"width="222" height="130px">
         <p class="copyright">&copy; E-Shop Buy Co. All rights reserved - 2022</p>
+        <p>Coded by Daniel Jordão <a href="https://github.com/dsjordao/E-ShopBuy">Visit my GitHub!</a></strong></p>
       </footer>
   </body>
 </html>
